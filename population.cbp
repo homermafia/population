@@ -31,6 +31,15 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="decoder_individu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="decoder_individu.h" />
+		<Unit filename="individu.h" />
+		<Unit filename="initialiser_individu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="initialiser_individu.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
