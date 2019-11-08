@@ -31,18 +31,30 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="decoder_individu.c">
+		<Unit filename="fonctions_individu/ajouter_indiv_q.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="decoder_individu.h" />
-		<Unit filename="individu.h" />
-		<Unit filename="initialiser_individu.c">
+		<Unit filename="fonctions_individu/ajouter_indiv_q.h" />
+		<Unit filename="fonctions_individu/decoder_indiv.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="initialiser_individu.h" />
+		<Unit filename="fonctions_individu/decoder_indiv.h" />
+		<Unit filename="fonctions_individu/initialiser_indiv.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="fonctions_individu/initialiser_indiv.h" />
+		<Unit filename="fonctions_individu/longueur_indiv.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="fonctions_individu/longueur_indiv.h" />
+		<Unit filename="fonctions_math/puissance.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="fonctions_math/puissance.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="structures/individu.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
