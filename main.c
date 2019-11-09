@@ -1,17 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
+#include "structures/individu.h"
+#include "structures/population.h"
+
 #include "fonctions_individu/initialiser_indiv.h"
 #include "fonctions_individu/decoder_indiv.h"
 #include "fonctions_individu/croiser_indiv.h"
 #include "fonctions_individu/qualite_indiv.h"
 
+#include "fonctions_population/initialiser_pop.h"
+
 int main()
 {
     srand(time(NULL));
 
-    individu personne1 = initialiser_indiv_iter(8);
-    individu personne2 = initialiser_indiv_recur(8);
+    population pop1 = initialiser_pop_iter(10);
+    population pop2 = initialiser_pop_recur(10);
+
+    individu personne1 = pop1->valeur;
+    individu personne2 = pop2->valeur;
 
     printf("Avant croisement:\n");
     printf("personne 1: %c%c%c%c %c%c%c%c\n", personne1->valeur, personne1->suivant->valeur, personne1->suivant->suivant->valeur, personne1->suivant->suivant->suivant->valeur, personne1->suivant->suivant->suivant->suivant->valeur, personne1->suivant->suivant->suivant->suivant->suivant->valeur, personne1->suivant->suivant->suivant->suivant->suivant->suivant->valeur, personne1->suivant->suivant->suivant->suivant->suivant->suivant->suivant->valeur);

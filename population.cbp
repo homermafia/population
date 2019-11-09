@@ -59,10 +59,23 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="fonctions_math/puissance.h" />
+		<Unit filename="fonctions_population/ajouter_pop_q.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="fonctions_population/ajouter_pop_q.h" />
+		<Unit filename="fonctions_population/initialiser_pop.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="fonctions_population/initialiser_pop.h" />
+		<Unit filename="fonctions_population/longueur_pop.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="fonctions_population/longueur_pop.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="structures/individu.h" />
+		<Unit filename="structures/population.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
