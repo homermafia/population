@@ -35,6 +35,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="fonctions_individu/ajouter_indiv_q.h" />
+		<Unit filename="fonctions_individu/croiser_indiv.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="fonctions_individu/croiser_indiv.h" />
 		<Unit filename="fonctions_individu/decoder_indiv.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -47,6 +51,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="fonctions_individu/longueur_indiv.h" />
+		<Unit filename="fonctions_individu/qualite_indiv.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="fonctions_individu/qualite_indiv.h" />
 		<Unit filename="fonctions_math/puissance.c">
 			<Option compilerVar="CC" />
 		</Unit>

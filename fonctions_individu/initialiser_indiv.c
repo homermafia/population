@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include "../structures/individu.h"
 #include "ajouter_indiv_q.h"

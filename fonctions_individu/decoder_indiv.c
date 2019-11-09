@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "../structures/individu.h"
 #include "longueur_indiv.h"
 #include "../fonctions_math/puissance.h"
