@@ -63,6 +63,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="fonctions_population/ajouter_pop_q.h" />
+		<Unit filename="fonctions_population/enchainer_pop.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="fonctions_population/enchainer_pop.h" />
 		<Unit filename="fonctions_population/initialiser_pop.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -71,6 +75,14 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="fonctions_population/longueur_pop.h" />
+		<Unit filename="fonctions_population/queue_pop.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="fonctions_population/queue_pop.h" />
+		<Unit filename="fonctions_population/trier_pop.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="fonctions_population/trier_pop.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

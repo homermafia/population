@@ -15,7 +15,7 @@ population ajouter_pop_q(population personnes, individu valeur) {
     else {
         population temp = personnes;
 
-        for (int i = longueur_pop(personnes) - 1; i > 0; i--) {
+        for (int i = longueur_pop(personnes); i > 1; i--) {
             temp = temp->suivant;
         }
         temp->suivant = nouv_personne;

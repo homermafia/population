@@ -14,7 +14,7 @@ individu ajouter_indiv_q(individu personne, Bit valeur) {
     else {
         individu temp = personne;
 
-        for (int i = longueur_indiv(personne) - 1; i > 0; i--) {
+        for (int i = longueur_indiv(personne); i > 1; i--) {
             temp = temp->suivant;
         }
         temp->suivant = nouv_bit;
