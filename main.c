@@ -12,6 +12,7 @@
 
 #include "fonctions_population/initialiser_pop.h"
 #include "fonctions_population/trier_pop.h"
+#include "fonctions_population/selectionner_pop.h"
 
 int main()
 {
@@ -58,6 +59,24 @@ int main()
     personne6 = pop2->suivant->suivant->valeur;
 
     printf("Apres tri:\n");
+    printf("qualite personne 1: %.2f\n", qualite_indiv(decoder_indiv(personne1)));
+    printf("qualite personne 2: %.2f\n", qualite_indiv(decoder_indiv(personne2)));
+    printf("qualite personne 3: %.2f\n", qualite_indiv(decoder_indiv(personne3)));
+    printf("qualite personne 4: %.2f\n", qualite_indiv(decoder_indiv(personne4)));
+    printf("qualite personne 5: %.2f\n", qualite_indiv(decoder_indiv(personne5)));
+    printf("qualite personne 6: %.2f\n\n", qualite_indiv(decoder_indiv(personne6)));
+
+    pop1 = selectionner_pop(pop1, 2);
+    pop2 = selectionner_pop(pop2, 2);
+
+    personne1 = pop1->valeur;
+    personne2 = pop1->suivant->valeur;
+    personne3 = pop1->suivant->suivant->valeur;
+    personne4 = pop2->valeur;
+    personne5 = pop2->suivant->valeur;
+    personne6 = pop2->suivant->suivant->valeur;
+
+    printf("Apres selection:\n");
     printf("qualite personne 1: %.2f\n", qualite_indiv(decoder_indiv(personne1)));
     printf("qualite personne 2: %.2f\n", qualite_indiv(decoder_indiv(personne2)));
     printf("qualite personne 3: %.2f\n", qualite_indiv(decoder_indiv(personne3)));
