@@ -18,8 +18,8 @@ int main()
 {
     srand(time(NULL));
 
-    population pop1 = initialiser_pop_iter(3);
-    population pop2 = initialiser_pop_recur(3);
+    population pop1 = initialiser_pop_iter(3, 8);
+    population pop2 = initialiser_pop_recur(3, 8);
 
     individu personne1 = pop1->valeur, personne2 = pop1->suivant->valeur, personne3 = pop1->suivant->suivant->valeur;
     individu personne4 = pop2->valeur, personne5 = pop2->suivant->valeur, personne6 = pop2->suivant->suivant->valeur;
