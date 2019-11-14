@@ -95,6 +95,7 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="structures/individu.h" />
+		<Unit filename="structures/param_qualite.h" />
 		<Unit filename="structures/population.h" />
 		<Extensions>
 			<code_completion />

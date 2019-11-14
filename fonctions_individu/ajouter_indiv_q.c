@@ -2,7 +2,6 @@
 #include "../structures/individu.h"
 #include "longueur_indiv.h"
 
-// ajoute un bit à un individu
 individu ajouter_indiv_q(individu personne, Bit valeur) {
     individu nouv_bit = (individu)malloc(sizeof(bit));
     nouv_bit->valeur = valeur;

@@ -3,7 +3,6 @@
 #include "longueur_pop.h"
 #include "queue_pop.h"
 
-// Insère la population p2 à la fin de la population p1
 population enchainer_pop(population p1, population p2) {
     if (longueur_pop(p1) == 0) {
         return p2;
