@@ -63,6 +63,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="fonctions_population/ajouter_pop_q.h" />
+		<Unit filename="fonctions_population/croiser_pop.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="fonctions_population/croiser_pop.h" />
 		<Unit filename="fonctions_population/enchainer_pop.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -94,6 +98,10 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="simuler_pop.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="simuler_pop.h" />
 		<Unit filename="structures/individu.h" />
 		<Unit filename="structures/param_qualite.h" />
 		<Unit filename="structures/population.h" />

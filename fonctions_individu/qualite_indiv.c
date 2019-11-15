@@ -3,12 +3,13 @@
 
 #include "../structures/individu.h"
 #include "decoder_indiv.h"
+#include "longueur_indiv.h"
 
 #include "../structures/param_qualite.h"
 
 double qualite_indiv(individu personne, param_qualite *parametres) {
     double qualite;
-    double X = ((double)decoder_indiv(personne)/puissance(2, parametres->longIndiv))*(parametres->B - parametres->A) + parametres->A;
+    double X = ((double)decoder_indiv(personne)/puissance(2, longueur_indiv(personne)))*(parametres->B - parametres->A) + parametres->A;
 
     switch (parametres->type_fonction) {
         case 's' :

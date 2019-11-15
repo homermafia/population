@@ -10,13 +10,11 @@
 
 // double A: un parametre réel
 // double B: un parametre réel
-// int longIndiv: la longueur d'un individu
 
 typedef struct param_qualite {
     char type_fonction;
     double A;
     double B;
-    int longIndiv;
 } param_qualite;
 
 #endif // PARAM_QUALITE_H_INCLUDED
