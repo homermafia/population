@@ -1,0 +1,29 @@
+population enlever_hab(population personnes, int num_habitant)
+    Si (num_habitant = 1) alors
+        personnes <- suc(personnes)
+        Sinon
+        suc(habitant_num(personnes, num_habitant - 1)) <- habitant_num(personnes, num_habitant + 1)
+    Fin Si
+    enlever_hab <- personnes
+
+
+population croiser_pop(population personnes, int pCroise)
+    population nouvelle_pop <- NULL
+
+    Pour i de 1 à longueur_pop(personnes)/2 de 1 en 1 faire
+        individu personne1
+        individu personne2
+
+        Entier num_hab1 <- 1 + rand() % (longueur_pop(personnes))
+        
+        personne1 <- valeur(habitant_num(personnes, num_hab1))
+        personnes <- enlever_hab(personnes, num_hab1)
+
+        Entier num_hab2 <- 1 + rand() % (longueur_pop(personnes))
+        personne2 <- valeur(habitant_num(personnes, num_hab2))
+        personnes <- enlever_hab(personnes, num_hab2)
+
+        nouvelle_pop <- ajouter_pop_q(nouvelle_pop, croiser_indiv(personne1, personne2, pCroise))
+    Fin Pour
+
+    croiser_pop <- nouvelle_pop

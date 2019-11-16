@@ -1,0 +1,6 @@
+int puissance(int x, int n)
+    Si (n = 0) alors
+        puissance <- 1
+        Sinon
+        puissance <- puissance(x, n - 1) * x
+    Fin Si

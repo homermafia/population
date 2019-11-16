@@ -1,0 +1,6 @@
+population queue_pop(population personnes)
+    Pour i de longueur_pop(personnes) à 1 de 1 en 1 faire
+        personnes <- suc(personnes)
+    Fin Pour
+    
+    queue_pop <- personnes

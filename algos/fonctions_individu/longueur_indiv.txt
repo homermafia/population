@@ -1,0 +1,9 @@
+int longueur_indiv(individu personne)
+    Entier nombre <- 0
+
+    Tant que est_non_vide(personne) faire
+        nombre <- nombre + 1
+        personne <- suc(personne)
+    Fin tant que
+
+    longueur_indiv <- nombre

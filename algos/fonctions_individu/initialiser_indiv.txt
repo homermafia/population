@@ -1,0 +1,17 @@
+Initialise un individu composé de bits alatoires de manière itérative :
+individu initialiser_indiv_iter(int longIndiv)
+    individu personne <- NULL
+
+    Pour i de 0 à longIndiv de 1 en 1 faire
+        personne <- ajouter_indiv_q(personne, rand()%2 + '0')
+    Fin Pour
+    initialiser_indiv_iter <- personne
+
+
+Initialise un individu composé de bits alatoires de manière récursive :
+individu initialiser_indiv_recur(int longIndiv)
+    Si longIndiv = 1 alors
+        initialiser_indiv_recur <- ajouter_indiv_q(NULL, rand()%2 + '0')
+        sinon
+        initialiser_indiv_recur <- ajouter_indiv_q(initialiser_indiv_recur(longIndiv - 1), rand()%2 + '0')
+    Fin SI

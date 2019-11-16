@@ -1,0 +1,6 @@
+population habitant_num(population personnes, int n)
+    Pour i de 1 à n de 1 en 1 faire
+        personnes <- suc(personnes)
+    Fin Pour
+    
+    habitant_num <- personnes

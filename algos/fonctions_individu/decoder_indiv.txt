@@ -1,0 +1,9 @@
+int decoder_indiv(individu personne)
+    Entier somme <- 0
+
+    Pour i de (longueur_indiv(personne) - 1) à 0 de -1 en -1 faire
+        somme <- somme + (valeur(personne) - '0') * puissance(2, i)
+        personne <- suc(personne)
+    Fin Pour
+    
+    decoder_indiv <- somme
