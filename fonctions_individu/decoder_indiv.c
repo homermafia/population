@@ -2,7 +2,6 @@
 #include "longueur_indiv.h"
 #include "../fonctions_math/puissance.h"
 
-// donne la valeur en base 10 de la personne grâce à sa séquence de bits
 int decoder_indiv(individu personne) {
     int somme = 0;
 

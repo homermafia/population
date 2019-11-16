@@ -3,7 +3,6 @@
 #include "../structures/population.h"
 #include "longueur_pop.h"
 
-// ajoute un individu à une population
 population ajouter_pop_q(population personnes, individu valeur) {
     population nouv_personne = (population)malloc(sizeof(personne));
     nouv_personne->valeur = valeur;

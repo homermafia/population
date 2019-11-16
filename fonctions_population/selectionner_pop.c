@@ -4,7 +4,6 @@
 #include "ajouter_pop_q.h"
 #include "habitant_num.h"
 
-// à partir d'une population trié, celle-ci es tronqué et complété par les tselect premiers éléments
 population selectionner_pop(population personnes, int tselect) {
     population nouv_pop = NULL;
 

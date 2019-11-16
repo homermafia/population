@@ -2,6 +2,8 @@
 #define CROISER_INDIV_H_INCLUDED
 #include "../structures/individu.h"
 
-void croiser_indiv(individu, individu, double);
+// Créé un nouvel individu héritant des bits des deux individus donnés, selon la probabilité donnée pCroise que le bit soit hérité du premier individu.
+// (0 <= pCroise <= 1)
+individu croiser_indiv(individu, individu, double);
 
 #endif // CROISER_INDIV_H_INCLUDED
