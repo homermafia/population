@@ -8,7 +8,7 @@
 #include "longueur_pop.h"
 #include "habitant_num.h"
 
-// Enlève l'habitant se trouvant à une certaine position dans la population.
+// Enlève l'habitant se trouvant à une certaine position dans la population (enlever != supprimer)
 population enlever_hab(population personnes, int num_habitant) {
     if (num_habitant == 1) {
         personnes = personnes->suivant;

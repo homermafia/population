@@ -2,6 +2,7 @@
 #define CROISER_POP_H_INCLUDED
 #include "../structures/population.h"
 
-population croiser_pop(population, int);
+// Croise aléatoirement la population selon la probabilté pCoise donnée.
+population croiser_pop(population, double);
 
 #endif // CROISER_POP_H_INCLUDED

@@ -49,6 +49,8 @@ int main()
         .B = B
     };
 
+    printf("\nSimulation en cours...\n\n");
+
     simuler_pop(longIndiv, pCroise, TaillePop, tSelect, nGen, parametres);
 
     return 0;
