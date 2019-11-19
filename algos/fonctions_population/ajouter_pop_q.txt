@@ -1,16 +1,21 @@
-population ajouter_pop_q(population personnes, individu valeur)
-    valeur(nouv_personne) <- valeur
-    suc(nouv_personne) <- NULL
+Fonction population ajouter_pop_q
 
-    Si (longueur_pop(personnes) = 0) alors
-        personnes <- nouv_personne
-        Sinon
-        population temp <- personnes
+Lexique :   - suc() : élément suivant de la liste
+            - longueur_pop() : longueur de la population
+            - valeur() : valeur en décimal d'un individu
+Données :   - individu valeur 
+            - population personnes
+            
+valeur(nouv_personne) = valeur
+suc(nouv_personne) = NULL
+Si (longueur_pop(personnes) = 0) alors
+    personnes = nouv_personne
+    Sinon
+    population temp = personnes
 
-        Pour i de longueur_pop(personnes) à 1 de -1 en -1 faire
-            temp <- suc(temp)
-        Fin Pour
-        suc(temp) <- nouv_personne
-    Fin Si
-
-    ajouter_pop_q personnes
+    Pour i de longueur_pop(personnes) à 1 de -1 en -1 faire
+        temp = suc(temp)
+    Fin Pour
+    suc(temp) = nouv_personne
+Fin Si
+ajouter_pop_q <- personnes

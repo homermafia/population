@@ -2,7 +2,7 @@ Fonction Entier decoder_indiv (donne la valeur decimal de la liste de bit d'un i
 
 Lexique :   - suc() : élément suivant de la liste
             - longueur_indiv() : longueur de la liste en paramètre
-            - valeur() : valeur en décimal du bit en paramètre
+            - valeur() : valeur d'un individu
 Donnée :    - individu personne 
 
 Entier somme = 0

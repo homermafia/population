@@ -1,16 +1,26 @@
-population initialiser_pop_iter(int TaillePop, int longIndiv)
-    population personnes <- NULL
+Fonction population initialiser_pop_iter
 
-    Pour i de 0 à TaillePop de 1 en 1 faire
-        personnes <- ajouter_pop_q(personnes, initialiser_indiv_iter(longIndiv))
-    Fin Pour
+Lexique :   - initialiser_indiv_iter() : initialisation d'un individu
+            - ajouter_pop_q() : ajoute un individu à une population en queue de liste
+Données :   - Entier TaillePop
+            - Entier longIndiv
 
-    initialiser_pop_iter <- personnes
+population personnes = NULL
+Pour i de 0 à TaillePop de 1 en 1 faire
+    personnes = ajouter_pop_q(personnes, initialiser_indiv_iter(longIndiv))
+Fin Pour
+initialiser_pop_iter <- personnes
 
 
-population initialiser_pop_recur(int TaillePop, int longIndiv)
-    Si (TaillePop = 1) alors
-        initialiser_pop_recur <- ajouter_pop_q(NULL, initialiser_indiv_recur(longIndiv))
-        Sinon
-        initialiser_pop_recur <- ajouter_pop_q(initialiser_pop_recur(TaillePop - 1, longIndiv), initialiser_indiv_recur(longIndiv))
-    Fin Si
+Fonction population initialiser_pop_recur
+
+Lexique :   - initialiser_indiv_recur() : initialisation d'un individu
+            - ajouter_pop_q() : ajoute un individu à une population en queue de liste
+Données :   - Entier TaillePop
+            - Entier longIndiv
+
+Si (TaillePop = 1) alors
+    initialiser_pop_recur <- ajouter_pop_q(NULL, initialiser_indiv_recur(longIndiv))
+    Sinon
+    initialiser_pop_recur <- ajouter_pop_q(initialiser_pop_recur(TaillePop - 1, longIndiv), initialiser_indiv_recur(longIndiv))
+Fin Si

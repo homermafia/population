@@ -2,7 +2,7 @@ Fonction individu croiser_indiv (naissance d'un enfant)
 
 Lexique :   - suc() : élément suivant de la liste
             - longueur_indiv() : longueur de la liste en paramètre
-            - valeur() : valeur en décimal du bit en paramètre
+            - valeur() : valeur d'un individu
             - ajouter_indiv_q() : ajoute un nouvel individu
 Données :   - individu personne1 
             - individu personne2

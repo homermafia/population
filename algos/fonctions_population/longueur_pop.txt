@@ -1,9 +1,12 @@
-int longueur_pop(population personnes)
-    Entier nombre <- 0
+Fonction Entier longueur_pop
 
-    Tant que est_non_nul(personnes) faire
-        nombre <- nombre +1
-        personnes <- suc(personnes)
-    Fin Tant que
+Lexique :   - est_non_nul() : vérification pour savoir si la liste n'est pas nulle
+            - suc() : élément suivant de la liste
+Données :   - population personnes
 
-    longueur_pop <- nombre
+Entier nombre = 0
+Tant que est_non_nul(personnes) faire
+    nombre = nombre +1
+    personnes = suc(personnes)
+Fin Tant que
+longueur_pop <- nombre

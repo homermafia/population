@@ -2,7 +2,7 @@ Fonction individu ajouter_indiv_q
 
 Lexique :   - suc() : élément suivant de la liste
             - longueur_indiv() : longueur de la liste en paramètre
-            - valeur() : valeur en décimal du bit en paramètre
+            - valeur() : valeur d'un individu
 Données :   - individu personne 
             - Bit valeur
 

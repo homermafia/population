@@ -1,6 +1,10 @@
-population habitant_num(population personnes, int n)
-    Pour i de 1 à n de 1 en 1 faire
-        personnes <- suc(personnes)
-    Fin Pour
-    
-    habitant_num <- personnes
+Fonction population habitant_num
+
+Lexique :   - suc() : élément suivant de la liste
+Données :   - Entier n
+            - population personnes
+
+Pour i de 1 à n de 1 en 1 faire
+    personnes = suc(personnes)
+Fin Pour
+habitant_num <- personnes
