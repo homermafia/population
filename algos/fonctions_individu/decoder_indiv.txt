@@ -1,9 +1,13 @@
-int decoder_indiv(individu personne)
-    Entier somme <- 0
+Fonction Entier decoder_indiv (donne la valeur decimal de la liste de bit d'un individu)
 
-    Pour i de (longueur_indiv(personne) - 1) à 0 de -1 en -1 faire
-        somme <- somme + (valeur(personne) - '0') * puissance(2, i)
-        personne <- suc(personne)
-    Fin Pour
-    
-    decoder_indiv <- somme
+Lexique :   - suc() : élément suivant de la liste
+            - longueur_indiv() : longueur de la liste en paramètre
+            - valeur() : valeur en décimal du bit en paramètre
+Donnée :    - individu personne 
+
+Entier somme = 0
+Pour i de (longueur_indiv(personne) - 1) à 0 de -1 en -1 faire
+    somme = somme + (valeur(personne) - '0') * puissance(2, i)
+    personne = suc(personne)
+Fin Pour   
+decoder_indiv <- somme

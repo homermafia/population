@@ -1,9 +1,12 @@
-int longueur_indiv(individu personne)
-    Entier nombre <- 0
+Fonction Entier longueur_indiv
 
-    Tant que est_non_vide(personne) faire
-        nombre <- nombre + 1
-        personne <- suc(personne)
-    Fin tant que
+Lexique :   - suc() : élément suivant de la liste
+            - est_non_vide() : test si la liste n'est pas vide
+Donnée :    - individu personne
 
-    longueur_indiv <- nombre
+Entier nombre = 0
+Tant que est_non_vide(personne) faire
+    nombre = nombre + 1
+    personne = suc(personne)
+Fin tant que
+longueur_indiv <- nombre

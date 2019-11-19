@@ -1,11 +1,15 @@
-double qualite_indiv(individu personne, param_qualite *parametres)
-    double qualite
-    double X <- (decoder_indiv(personne) / puissance(2, longueur_indiv(personne))) * (B(parametres) - A(parametres)) + A(parametres)
+Fonction double qualite_indiv (calcul la qualité d'un individu)
 
-    Selon (type_fonction(parametres)) alors
-        cas type_fonction(parametres) = 's' : qualite <- -pow(X, 2)
-        case type_fonction(parametres) 'l' : qualite =  -log(X)
-        case type_fonction(parametres) 'c' : qualite = -cos(X)
-    Fin Selon
+Lexique :   - longueur_indiv() : longueur de la liste en paramètre
+            - decoder_indiv() : donne la valeur decimal de la liste de bit d'un individu
+Données :   - individu personne
+            - param_qualite *parametres
 
-    qualite_indiv <- qualite
+double qualite
+double X = (decoder_indiv(personne) / puissance(2, longueur_indiv(personne))) * (B(parametres) - A(parametres)) + A(parametres)
+Selon (type_fonction(parametres)) alors
+    cas type_fonction(parametres) = 's' : qualite = -pow(X, 2)
+    case type_fonction(parametres) 'l' : qualite =  -log(X)
+    case type_fonction(parametres) 'c' : qualite = -cos(X)
+Fin Selon
+qualite_indiv <- qualite

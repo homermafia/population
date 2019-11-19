@@ -1,17 +1,20 @@
-individu ajouter_indiv_q(individu personne, Bit valeur)
-    valeur(nouv_bit) <- valeur
-    suc(nouv_bit) <- NULL
+Fonction individu ajouter_indiv_q
 
-    Si longueur_indiv(personne) = 0 alors
-        personne <- nouv_bit
-        sinon
-        individu temp <- personne
-    Fin Si
+Lexique :   - suc() : élément suivant de la liste
+            - longueur_indiv() : longueur de la liste en paramètre
+            - valeur() : valeur en décimal du bit en paramètre
+Données :   - individu personne 
+            - Bit valeur
 
-    Pour i de longueur_indiv(personne) à 1 de -1 en -1 faire
-        temp <- suc(temp)
-    Fin Pour
-    
-    suc(temp) <- nouv_bit
-    
-    ajouter_indiv_q <- personne
+valeur(nouv_bit) = valeur
+suc(nouv_bit) = NULL
+Si longueur_indiv(personne) = 0 alors
+    personne = nouv_bit
+    sinon
+    individu temp = personne
+Fin Si
+Pour i de longueur_indiv(personne) à 1 de -1 en -1 faire
+    temp = suc(temp)
+Fin Pour  
+suc(temp) = nouv_bit   
+ajouter_indiv_q <- personne

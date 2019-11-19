@@ -1,15 +1,21 @@
-individu croiser_indiv(individu personne1, individu personne2, double pCroise)
-    individu nouvel_indiv <- NULL
+Fonction individu croiser_indiv (naissance d'un enfant)
 
-    Pour i de longueur_indiv(personne1) à 0 de -1 en -1 faire 
-        Si (rand()/RAND_MAX) <= pCroise alors
-            nouvel_indiv <- ajouter_indiv_q(nouvel_indiv, valeur(personne1))
-            Sinon
-            nouvel_indiv <- ajouter_indiv_q(nouvel_indiv, valeur(personne2))
-        Fin Si
-        
-        personne1 <- personne1->suivant
-        personne2 <- personne2->suivant
-    Fin pour
-    
-    croiser_indiv <- nouvel_indiv
+Lexique :   - suc() : élément suivant de la liste
+            - longueur_indiv() : longueur de la liste en paramètre
+            - valeur() : valeur en décimal du bit en paramètre
+            - ajouter_indiv_q() : ajoute un nouvel individu
+Données :   - individu personne1 
+            - individu personne2
+            - double pCroise
+            
+individu nouvel_indiv = NULL
+Pour i de longueur_indiv(personne1) à 0 de -1 en -1 faire 
+    Si (rand()/RAND_MAX) <= pCroise alors
+        nouvel_indiv = ajouter_indiv_q(nouvel_indiv, valeur(personne1))
+        Sinon
+        nouvel_indiv = ajouter_indiv_q(nouvel_indiv, valeur(personne2))
+    Fin Si      
+    personne1 = suc(personne1)
+    personne2 = suc(personne2)
+Fin pour    
+croiser_indiv <- nouvel_indiv
