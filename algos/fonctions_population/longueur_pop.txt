@@ -1,0 +1,9 @@
+int longueur_pop(population personnes)
+    Entier nombre <- 0
+
+    Tant que est_non_nul(personnes) faire
+        nombre <- nombre +1
+        personnes <- suc(personnes)
+    Fin Tant que
+
+    longueur_pop <- nombre

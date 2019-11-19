@@ -1,0 +1,7 @@
+population enchainer_pop(population p1, population p2)
+    Si (longueur_pop(p1) = 0) alors
+        enchainer_pop <- p2
+        Sinon
+        suc(queue_pop(p1)) <- p2
+        enchainer_pop <- p1
+    Fin Si

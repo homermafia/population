@@ -1,0 +1,13 @@
+void simuler_pop(int longIndiv, double pCroise, int TaillePop, int tSelect, int nGen, param_qualite parametres)
+    population pop <- initialiser_pop_iter(TaillePop, longIndiv)
+
+    Pour i de 0 à nGen de1 en 1 faire
+        pop <- selectionner_pop(trier_pop(croiser_pop(pop, pCroise), &parametres), tSelect * longueur_pop(pop) / 100)
+        Ecrire "Generation" i + 1 "traitee. Population restante:" longueur_pop(pop)
+    Fin Pour
+
+    Si (longueur_pop(pop) = 0) alors
+        Ecrire "La population a ete eteinte."
+        Sinon
+        Ecrire "Il reste " longueur-pop(pop) "individus dans la population et le meilleur individu a pour valeur " decoder_indiv(valeur(pop))"et a pour qualite " qualite_indiv(valeur(pop), &parametres))
+    Fin Si
