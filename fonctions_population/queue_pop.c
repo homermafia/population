@@ -1,9 +1,7 @@
 #include "../structures/population.h"
 #include "longueur_pop.h"
+#include "habitant_num.h"
 
 population queue_pop(population personnes) {
-    for (int i = longueur_pop(personnes); i > 1; i--) {
-        personnes = personnes->suivant;
-    }
-    return personnes;
+    return habitant_num(personnes, longueur_pop(personnes));
 }

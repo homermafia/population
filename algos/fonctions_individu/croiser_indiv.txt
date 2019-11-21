@@ -1,4 +1,4 @@
-Fonction individu croiser_indiv (naissance d'un enfant)
+﻿Fonction individu croiser_indiv (naissance d'un enfant)
 
 Lexique :   - suc() : élément suivant de la liste
             - longueur_indiv() : longueur de la liste en paramètre
@@ -9,7 +9,7 @@ Données :   - individu personne1
             - double pCroise
             
 individu nouvel_indiv = NULL
-Pour i de longueur_indiv(personne1) à 0 de -1 en -1 faire 
+Pour i de longueur_indiv(personne1) à 1 de -1 en -1 faire 
     Si (rand()/RAND_MAX) <= pCroise alors
         nouvel_indiv = ajouter_indiv_q(nouvel_indiv, valeur(personne1))
         Sinon

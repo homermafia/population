@@ -19,10 +19,10 @@ population enlever_hab(population personnes, int num_habitant) {
     return personnes;
 }
 
-population croiser_pop(population personnes, int pCroise) {
+population croiser_pop(population personnes, double pCroise, int nbCroise) {
     population nouvelle_pop = NULL;
 
-    for (int i = 1; i < longueur_pop(personnes)/2; i++) {
+    for (int i = longueur_pop(personnes)/2; i > 0; i--) {
         individu personne1, personne2;
 
         int num_hab1 = 1 + rand()%(longueur_pop(personnes));
@@ -33,7 +33,9 @@ population croiser_pop(population personnes, int pCroise) {
         personne2 = habitant_num(personnes, num_hab2)->valeur;
         personnes = enlever_hab(personnes, num_hab2);
 
-        nouvelle_pop = ajouter_pop_q(nouvelle_pop, croiser_indiv(personne1, personne2, pCroise));
+        for (int j = 0; j < nbCroise; j++) {
+            nouvelle_pop = ajouter_pop_q(nouvelle_pop, croiser_indiv(personne1, personne2, pCroise));
+        }
     }
 
     return nouvelle_pop;

@@ -1,8 +1,8 @@
-Fonction population ajouter_pop_q
+﻿Fonction population ajouter_pop_q
 
 Lexique :   - suc() : élément suivant de la liste
             - longueur_pop() : longueur de la population
-            - valeur() : valeur en décimal d'un individu
+            - valeur() : individu de la popualtion
 Données :   - individu valeur 
             - population personnes
             
@@ -13,7 +13,7 @@ Si (longueur_pop(personnes) = 0) alors
     Sinon
     population temp = personnes
 
-    Pour i de longueur_pop(personnes) à 1 de -1 en -1 faire
+    Pour i de longueur_pop(personnes) à 2 de -1 en -1 faire
         temp = suc(temp)
     Fin Pour
     suc(temp) = nouv_personne

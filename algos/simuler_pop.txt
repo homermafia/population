@@ -1,9 +1,9 @@
-void simuler_pop(int longIndiv, double pCroise, int TaillePop, int tSelect, int nGen, param_qualite parametres)
+﻿void simuler_pop(int longIndiv, double pCroise, int TaillePop, int tSelect, int nGen, int nbCroise, param_qualite parametres)
     population pop <- initialiser_pop_iter(TaillePop, longIndiv)
 
     Pour i de 0 à nGen de1 en 1 faire
-        pop <- selectionner_pop(trier_pop(croiser_pop(pop, pCroise), &parametres), tSelect * longueur_pop(pop) / 100)
-        Ecrire "Generation" i + 1 "traitee. Population restante:" longueur_pop(pop)
+        pop <- selectionner_pop(trier_pop(croiser_pop(pop, pCroise, nbCroise), &parametres), tSelect * longueur_pop(pop) / 100)
+        Ecrire "Generation" i + 1 "traitee. Individus restants:" longueur_pop(pop)
     Fin Pour
 
     Si (longueur_pop(pop) = 0) alors

@@ -1,4 +1,4 @@
-Fonction individu ajouter_indiv_q
+﻿Fonction individu ajouter_indiv_q
 
 Lexique :   - suc() : élément suivant de la liste
             - longueur_indiv() : longueur de la liste en paramètre
@@ -13,7 +13,7 @@ Si longueur_indiv(personne) = 0 alors
     sinon
     individu temp = personne
 Fin Si
-Pour i de longueur_indiv(personne) à 1 de -1 en -1 faire
+Pour i de longueur_indiv(personne) à 2 de -1 en -1 faire
     temp = suc(temp)
 Fin Pour  
 suc(temp) = nouv_bit   

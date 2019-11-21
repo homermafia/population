@@ -1,4 +1,4 @@
-Fonction population initialiser_pop_iter
+﻿Fonction population initialiser_pop_iter
 
 Lexique :   - initialiser_indiv_iter() : initialisation d'un individu
             - ajouter_pop_q() : ajoute un individu à une population en queue de liste
@@ -6,7 +6,7 @@ Données :   - Entier TaillePop
             - Entier longIndiv
 
 population personnes = NULL
-Pour i de 0 à TaillePop de 1 en 1 faire
+Pour i de 1 à TaillePop de 1 en 1 faire
     personnes = ajouter_pop_q(personnes, initialiser_indiv_iter(longIndiv))
 Fin Pour
 initialiser_pop_iter <- personnes

@@ -1,8 +1,8 @@
-Fonction population enchainer_pop
+﻿Fonction population enchainer_pop
 
 Lexique :   - suc() : élément suivant de la liste
             - longueur_pop() : longueur de la population
-            - queue_pop() : 
+            - queue_pop() : dernier élément de la liste
 Données :   - population p1
             - population p2
 

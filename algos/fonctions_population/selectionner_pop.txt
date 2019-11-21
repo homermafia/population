@@ -1,9 +1,9 @@
-Fonction population selectionner_pop
+﻿Fonction population selectionner_pop
 
 Lexique :   - longueur_pop() : longueur de la population
             - suc() : élément suivant de la liste
             - ajouter_pop_q() : ajoute un individu à une population en queue de liste
-            - valeur() : valeur en décimal d'un individu
+            - valeur() : individu de la popualtion
             - habitant_num() : numéro d'un habitant d'une population
 Données :   - population personnes
             - Entier tselect
@@ -14,7 +14,7 @@ Si (tselect = 0) faire
     Sinon
     Entier nb_habitant = longueur_pop(personnes)
 
-    Pour i de 0 à nb_habitant de 1 en 1 faire
+    Pour i de 0 à nb_habitant - 1 de 1 en 1 faire
         Si (i/tselect > 0) alors
             nouv_pop = valeur(ajouter_pop_q(nouv_pop, habitant_num(nouv_pop, i % tselect + 1)))
             Sinon

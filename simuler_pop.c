@@ -12,12 +12,12 @@
 #include "fonctions_population/trier_pop.h"
 #include "fonctions_population/selectionner_pop.h"
 
-void simuler_pop(int longIndiv, double pCroise, int TaillePop, int tSelect, int nGen, param_qualite parametres) {
+void simuler_pop(int longIndiv, double pCroise, int TaillePop, int tSelect, int nGen, int nbCroise, param_qualite parametres) {
     population pop = initialiser_pop_iter(TaillePop, longIndiv);
 
     for (int i = 0; i < nGen; i++) {
-        pop = selectionner_pop(trier_pop(croiser_pop(pop, pCroise), &parametres), tSelect*longueur_pop(pop)/100);
-        printf("Generation %d traitee. Population restante: %d\n", i + 1, longueur_pop(pop));
+        pop = selectionner_pop(trier_pop(croiser_pop(pop, pCroise, nbCroise), &parametres), tSelect*longueur_pop(pop)/100);
+        printf("Generation %d traitee. Individus restants: %d\n", i + 1, longueur_pop(pop));
     }
 
     if (longueur_pop(pop) == 0) {

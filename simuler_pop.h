@@ -9,6 +9,6 @@
 // int tSelect: Taux de sélection de la population après un croisement (0 <= tSelect <= 100)
 // int nGen: Nombre de générations
 // param_qualite parametres: les paramètres de calcul de la qualité d'un individu, qui sont demandés lors du lancement du programme (voir fichier structure param_qualite.h pour plus d'inforamtions)
-void simuler_pop(int, double, int, int, int, param_qualite);
+void simuler_pop(int, double, int, int, int, int, param_qualite);
 
 #endif // SIMULER_POP_H_INCLUDED

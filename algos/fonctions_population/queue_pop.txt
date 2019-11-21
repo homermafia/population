@@ -1,10 +1,7 @@
-Fonction population queue_pop
+﻿Fonction population queue_pop
 
 Lexique :   - longueur_pop() : longueur de la population
-            - suc() : élément suivant de la liste
+            - habitant_num() : l'habitant d'une population situé à un certain rang
 Données :   - population personnes
 
-Pour i de longueur_pop(personnes) à 1 de 1 en 1 faire
-    personnes = suc(personnes)
-Fin Pour
-queue_pop <- personnes
+queue_pop <- habitant_num(personnes, longeur_pop(personnes))

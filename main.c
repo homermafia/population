@@ -14,6 +14,7 @@ int main()
     int TaillePop;
     int tSelect;
     int nGen;
+    int nbCroise;
     char type_fonction;
     double A;
     double B;
@@ -33,6 +34,9 @@ int main()
     printf("\nVeuillez entrer le nombre de generations: ");
     scanf("%d", &nGen);
 
+    printf("\nVeuillez entrer le nombre de fois que deux individus se croisent : ");
+    scanf("%d", &nbCroise);
+
     scanf("%c", &type_fonction);
     printf("\nVeuillez entrer le type de fonction (voir documentation): ");
     scanf("%c", &type_fonction);
@@ -51,7 +55,7 @@ int main()
 
     printf("\nSimulation en cours...\n\n");
 
-    simuler_pop(longIndiv, pCroise, TaillePop, tSelect, nGen, parametres);
+    simuler_pop(longIndiv, pCroise, TaillePop, tSelect, nGen, nbCroise, parametres);
 
     return 0;
 }

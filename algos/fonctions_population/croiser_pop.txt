@@ -1,7 +1,7 @@
-Fonction population enlever_hab
+﻿Fonction population enlever_hab
 
 Lexique :   - suc() : élément suivant de la liste
-            - habitant_num() : numéro d'un habitant d'une population
+            - habitant_num() : l'habitant d'une population situé à un certain rang
 Données :   - Entier num_habitant
             - population personnes
 
@@ -19,14 +19,15 @@ Fonction population croiser_pop (naissance d'un enfant avec deux personnes d'une
 Lexique :   - enlever_hab() : enlève un individu d'une population
             - ajouter_pop_q() : ajoute un individu à une population en queue de liste
             - longueur_pop() : longueur de la population
-            - valeur() : valeur en décimal d'un individu
+            - valeur() : individu de la popualtion
             - croiser_indiv() : naissance d'un enfant avec deux individu
             - habitant_num() : numéro d'un habitant d'une population
-Données :   - Entier pCroise
+Données :   - double pCroise
+            - int nbCroise
             - population personnes
 
 population nouvelle_pop = NULL
-Pour i de 1 à longueur_pop(personnes)/2 de 1 en 1 faire
+Pour i de longueur_pop(personnes)/2 à 1 de -1 en -1 faire
     individu personne1
     individu personne2
     
@@ -38,6 +39,8 @@ Pour i de 1 à longueur_pop(personnes)/2 de 1 en 1 faire
     personne2 = valeur(habitant_num(personnes, num_hab2))
     personnes = enlever_hab(personnes, num_hab2)
 
-    nouvelle_pop = ajouter_pop_q(nouvelle_pop, croiser_indiv(personne1, personne2, pCroise))
+    Pour j de 1 à nbCroise de 1 en 1 faire
+        nouvelle_pop = ajouter_pop_q(nouvelle_pop, croiser_indiv(personne1, personne2, pCroise))
+    Fin Pour
 Fin Pour
 croiser_pop <- nouvelle_pop

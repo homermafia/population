@@ -1,9 +1,9 @@
-Fonction population trier_pop
+﻿Fonction population trier_pop
 
 Lexique :   - longueur_pop() : longueur de la population
             - suc() : élément suivant de la liste
             - ajouter_pop_q() : ajoute un individu à une population en queue de liste
-            - valeur() : valeur en décimal d'un individu
+            - valeur() : individu de la popualtion
             - qualite_indiv() : qualité d'un individu
             - enchainer_pop() : 
 Données :   - population personnes
@@ -17,7 +17,7 @@ Si (longueur_pop(personnes) = 0) alors
     population inf_pivot = NULL
     population sup_pivot = NULL
 
-    Pour i de longueur_pop(personnes) à 1 de -1 en -1 faire
+    Pour i de longueur_pop(personnes) à 2 de -1 en -1 faire
         Si (qualite_indiv(valeur(habitant), parametres) < pivot)
             inf_pivot = ajouter_pop_q(inf_pivot, valeur(habitant))
             Sinon

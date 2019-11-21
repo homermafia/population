@@ -1,10 +1,10 @@
-Fonction individu initialiser_indiv_iter (Initialise un individu composé de bits alatoires de manière itérative)
+﻿Fonction individu initialiser_indiv_iter (Initialise un individu composé de bits alatoires de manière itérative)
 
 Lexique :   - ajouter_indiv_q() : ajoute un nouvel individu
 Donnée :    - Entier longIndiv : correspond au nombre de bit auquel on va initialiser la personne
 
 individu personne = NULL
-Pour i de 0 à longIndiv de 1 en 1 faire
+Pour i de 1 à longIndiv de 1 en 1 faire
     personne = ajouter_indiv_q(personne, rand()%2 + '0')
 Fin Pour
 initialiser_indiv_iter <- personne

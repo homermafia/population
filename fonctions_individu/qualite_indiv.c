@@ -18,7 +18,8 @@ double qualite_indiv(individu personne, param_qualite *parametres) {
         case 'l' :
             qualite =  -log(X);
             break;
-        case 'c' : qualite = -cos(X);
+        case 'c' :
+            qualite = -cos(X);
             break;
     }
 
