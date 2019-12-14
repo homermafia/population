@@ -24,6 +24,6 @@ void simuler_pop(int longIndiv, double pCroise, int TaillePop, int tSelect, int 
         printf("\nLa population a ete eteinte.");
     }
     else {
-        printf("\nIl reste %d individus dans la population et le meilleur individu a pour valeur %d et a pour qualite %.2f", longueur_pop(pop), decoder_indiv(pop->valeur), qualite_indiv(pop->valeur, &parametres));
+        printf("\nIl reste %d individus dans la population et le meilleur individu a pour valeur %d et a pour qualite %.2f\n", longueur_pop(pop), decoder_indiv(pop->valeur), qualite_indiv(pop->valeur, &parametres));
     }
 }
