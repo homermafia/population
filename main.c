@@ -5,6 +5,8 @@
 #include "simuler_pop.h"
 #include "structures/param_qualite.h"
 
+#include "fonctions_math/puissance.h"
+
 int main()
 {
     srand(time(NULL));
@@ -22,7 +24,7 @@ int main()
     printf("Veuillez entrer la longueur d'un individu: ");
     scanf("%d", &longIndiv);
 
-    printf("\nVeuillez entrer la probabilte de croisement (>= 0 et <= 1): ");
+    printf("\nVeuillez entrer la probabilite de croisement (>= 0 et <= 1): ");
     scanf("%lf", &pCroise);
 
     printf("\nVeuillez entrer la taille de la population: ");
@@ -56,6 +58,8 @@ int main()
     printf("\nSimulation en cours...\n\n");
 
     simuler_pop(longIndiv, pCroise, TaillePop, tSelect, nGen, nbCroise, parametres);
+
+
 
     return 0;
 }

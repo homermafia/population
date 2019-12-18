@@ -1,8 +1,9 @@
-int puissance(int x, int n) {
-    if (n == 0) {
-        return 1;
+unsigned long long puissance(int x, int n) {
+    unsigned long long resultat = 1;
+
+    for (int i = 0; i < n; i++) {
+        resultat = resultat*x;
     }
-    else {
-        return puissance(x, n - 1)*x;
-    }
+
+    return resultat;
 }
